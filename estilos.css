@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sigmar', cursive;
+}
+
+/* colores
+#236C75
+#4AE2F7
+#74B9C2
+
+*/
+/* ordenes gnrales */
+
+hr {
+    height: 2px;
+    background-color: #236C75;
+    margin: 20px 0px
+}
+
+body {
+    background-color: #236C75;
+    position: relative;
+    min-height: 160vh;
+
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+}
+
+/* header */
+
+header {
+    background-color: #236C75;
+    color: aliceblue;
+    border-bottom: #4AE2F7 3px solid;
+    min-height: 70px;
+    line-height: 70px;
+
+}
+
+header #logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 4px;
+}
+
+header a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header a:hover {
+    color: #049185;
+}
+
+header li {
+    display: inline;
+    float: left;
+    padding: 0px 35px;
+}
+
+.marcado {
+    color: #4AE2F7;
+}
+
+/* vidriera */
+#vidriera {
+    background-image: url(img/slideshow/cosmetica2.jpg);
+    background-size: cover;
+    position: center;
+    min-height: 400px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#vidriera h1 {
+    font-size: 60px;
+    padding: 100px;
+}
+
+#vidriera p {
+    font-size: 25px;
+}
+
+/* newsletter */
+#newsletter {
+    background-color: #006875;
+    color: aliceblue;
+    min-height: 30px;
+    padding: 20px;
+}
+
+#newsletter h3 {
+    float: left;
+    margin-top: 5px;
+}
+
+#newsletter form {
+    float: right;
+}
+
+#newsletter input {
+    padding: 4px;
+    height: 20px;
+    width: 200px;
+}
+
+.btn_news {
+    height: 32px;
+    background-color: rgb(48, 238, 245);
+    border: #841CAD;
+    padding: 0 20px;
+    color: aliceblue;
+}
+
+::placeholder {}
+
+/* BOXES */
+#boxes {
+    margin-top: 20px;
+
+}
+
+#boxes h2 {
+    color: #4AE2F7;
+    font-size: 25px;
+    text-align: center;
+}
+
+#boxes img {
+    height: 220px;
+    width: 200px;
+    max-height: 220px;
+}
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+#boxes p {
+    font-size: 13px;
+    padding: 0 30px;
+}
+
+#boxes h4 {
+    margin: 15px 0;
+    color: #4AE2F7;
+}
+
+/* FOOTER */
+
+#footer {
+    background: #006875;
+    height: 90px;
+    border-top: 2px solid rgba(25, 255, 209, 0.24);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #7EAD0A;
+
+}
+
+#footer nav {
+    float: right;
+    margin-top: 4px;
+}
+
+#footer li {
+    display: inline;
+    float: left;
+    padding: 20px 30px;
+
+}
+
+.iconos-sociales img {
+    transition: all 0.5s ease-out;
+}
+
+.iconos-sociales img:hover {
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transform: translate(0px, -5px);
+}
+
+#armonias_fuente {}
+
+/* SOMOS */
+
+#vidriera-somos {
+    min-height: 300px;
+    line-height: 200px;
+    background-image: url(img/slideshow/vidrierasomos2.jpg);
+    background-size: cover;
+    position: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+#vidriera-somos h1 {
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+}
+
+article.texto_somos {
+    float: left;
+    max-width: 60%;
+
+}
+
+aside.cuadrito {
+    float: right;
+    width: 30%;
+    background-color: #3AB2C2;
+    color: aliceblue;
+    padding: 15px;
+    margin-top: 60px;
+}
+
+.texto_somos h3 {
+    margin-top: 30px;
+    font-size: 25PX;
+    margin-bottom: 5px;
+}
+
+.texto_somos p {
+    margin-bottom: 15px;
+}
+
+.texto_somos .destacado {
+    background-color: #3AB2C2;
+    padding: 15px;
+    color: aliceblue;
+}
+
+aside.cuadrito .contacto input,
+aside.cuadrito .contacto textarea {
+    width: 97%;
+    padding: 5px;
+    resize: none;
+
+}
+
+aside.cuadrito h4 {
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.contacto input {
+    margin-bottom: 15px;
+}
+
+/* IDEAS  */
+
+#vidriera_ideas {
+    min-height: 300px;
+    line-height: 200px;
+    background-image: url(img/slideshow/vidrierasomos2.jpg);
+    background-size: cover;
+    position: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+#vidriera_ideas h1 {
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+/* Flex Box */
+
+.contenedor_padre {
+    display: flex;
+    max-width: 80%;
+    background-color: #236C75;
+    margin: auto;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-height: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    margin-top: 10px;
+}
+
+.hijo {
+    background-image: url(img/slideshow/cometicabalsamo.jpg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 5px solid #4AE2F7;
+    background-size: 100% 100%;
+    position: relative;
+
+}
+
+
+.hijo2 {
+    background-image: url(img/slideshow/cosmeticacremafacial.jpg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 5px solid #4AE2F7;
+    background-size: 100% 100%;
+}
+
+.hijo3 {
+    background-image: url(img/slideshow/cosmeticamasajes.jpg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 5px solid #4AE2F7;
+    background-size: 100% 100%;
+}
+
+.hijo4 {
+    background-image: url(img/slideshow/cosmeticaserumciclos.jpg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 5px solid #4AE2F7;
+    background-size: 100% 100%;
+}
+
+.hijo5 {
+    background-image: url(img/slideshow/cosmeticamascarilla.jpg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 5px solid #4AE2F7;
+    background-size: 100% 100%;
+}
+
+.hijo6 {
+    background-image: url(img/slideshow/cosmeticarolon.jpg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 5px solid #4AE2F7;
+    background-size: 100% 100%;
+}
+
+.hijo7 {
+    background-image: url(img/slideshow/cosmeticashampoociclos.jpg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 5px solid #4AE2F7;
+    background-size: 100% 100%;
+}
+
+.hijo8 {
+    background-image: url(img/slideshow/cosmeticatonicofacial.jpg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 5px solid #4AE2F7;
+    background-size: 100% 100%;
+}
+
+.hijo9 {
+    background-image: url(img/slideshow/cosmeticasprayrulos.jpg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 5px solid #4AE2F7;
+    background-size: 100% 100%;
+}
+
+.hijo10 {
+    background-image: url(img/slideshow/cosmeticadesodorante.jpg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 5px solid #4AE2F7;
+    background-size: 100% 100%;
+}
+
+.hijo :hover {
+
+    transition: transform 0.3s;
+    transform: scale(2.5);
+
+}
+
+.hijo2 :hover {
+
+    transition: transform 0.3s;
+    transform: scale(2.5);
+
+}
+
+.hijo3 :hover {
+
+    transition: transform 0.3s;
+    transform: scale(2.5);
+
+}
+
+.hijo4 :hover {
+
+    transition: transform 0.3s;
+    transform: scale(2.5);
+
+}
+
+.hijo5 :hover {
+
+    transition: transform 0.3s;
+    transform: scale(2.5);
+
+}
+
+.hijo6 :hover {
+
+    transition: transform 0.3s;
+    transform: scale(2.5);
+
+}
+
+.hijo7 :hover {
+
+    transition: transform 0.3s;
+    transform: scale(2.5);
+
+}
+
+.hijo8 :hover {
+
+    transition: transform 0.3s;
+    transform: scale(2.5);
+
+}
+
+.hijo9 :hover {
+
+    transition: transform 0.3s;
+    transform: scale(2.5);
+
+}
+
+.hijo10 :hover {
+
+    transition: transform 0.3s;
+    transform: scale(2.5);
+
+}
+
+.ideas_texto {
+    color: #4AE2F7;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media responsive media query */
+
+@media only screen and (max-width: 768px) {
+    header {
+        min-height: 40px;
+        line-height: 40px;
+    }
+
+    header #logo,
+    header nav,
+    header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 25px;
+        padding-top: 30px;
+    }
+
+    header a {
+        font-size: 20px;
+    }
+
+    header li {
+        padding: 0 5px;
+    }
+
+    #vidriera h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    #vidriera p {
+        font-size: 20px;
+    }
+
+    #newsletter h3,
+    #newsletter form {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #newsletter input {
+        width: 100%;
+        margin: 7px 0;
+    }
+
+    #newsletter .btn_news {
+        width: 100%;
+    }
+
+    /* media query somos */
+
+    article.texto_somos {
+        float: left;
+        max-width: 100%;
+
+    }
+
+    aside.cuadrito {
+        float: right;
+        width: 100%;
+
+    }
+
+    #vidriera-somos h1 {
+        font-size: 40px;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    aside.cuadrito p {
+        width: 90%;
+    }
+
+    /* media query contacto */
+    #vidriera_contacto h1 {
+        font-size: 10px;
+        width: 40px;
+
+    }
+
+    aside.cuadrito .contacto input,
+    aside.cuadrito .contacto textarea {
+        width: 87%;
+        padding: 5px;
+        resize: none;
+    }
+
+    body {
+        background-color: #236C75;
+        position: relative;
+        min-height: 200vh;
+        height: 470vh;
+        max-height: 470vh;
+
+    }
+
+    .box img {
+        max-width: 140px;
+
+    }
